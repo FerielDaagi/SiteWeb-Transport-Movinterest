@@ -1,0 +1,196 @@
+<?php
+session_start();
+// Check if the user is logged in
+if (!isset($_SESSION['email'])) {
+  // If not logged in, redirect to the login page
+  header('Location: C:\xampp\htdocs\test\pmv\view\Front_office\Contact.php'); // Change 'login.php' to the actual login page
+  exit();
+}
+?>
+
+
+<!DOCTYPE html>
+<html style="font-size: 16px" lang="fr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="keywords" content="987-654-321&nbsp;or
+456-789-321, Taxi transfers from and to&nbsp; Airport, Yellow Cab NYC, Book your trip online now" />
+  <meta name="description" content="" />
+  <title>acceuil</title>
+  <link rel="stylesheet" href="nicepage.css" media="screen" />
+  <link rel="stylesheet" href="acceuil.css" media="screen" />
+  <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+  <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+  <meta name="generator" content="Nicepage 5.20.7, nicepage.com" />
+  <link id="u-theme-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i" />
+  <link id="u-page-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|Andika:400,400i,700,700i" />
+
+  <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": ""
+      }
+    </script>
+  <meta name="theme-color" content="#478ac9" />
+  <meta property="og:title" content="acceuil" />
+  <meta property="og:type" content="website" />
+  <meta data-intl-tel-input-cdn-path="intlTelInput/" />
+</head>
+
+<body data-path-to-root="./" data-include-products="false" class="u-body u-xl-mode" data-lang="fr">
+  <header class="u-clearfix u-header u-hidden-md u-header" id="sec-29c2">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
+        <div class="menu-collapse" style="font-size: 1.25rem; letter-spacing: 0px">
+          <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+            href="#">
+            <svg class="u-svg-link" viewBox="0 0 24 24">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use>
+            </svg>
+            <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px"
+              xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+              <g>
+                <rect y="1" width="16" height="2"></rect>
+                <rect y="7" width="16" height="2"></rect>
+                <rect y="13" width="16" height="2"></rect>
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div class="u-custom-menu u-nav-container">
+          <ul class="u-nav u-unstyled u-nav-1">
+            <li class="u-nav-item">
+              <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                href="Contact.php" style="padding: 18px 70px">Se connecter</a>
+            </li>
+            <li class="u-nav-item">
+              <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                href="acceuil.html" style="padding: 18px 70px">Accueil</a>
+            </li>
+            <li class="u-nav-item">
+              <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                href="Sinscrire.php" style="padding: 18px 70px">s'inscrire</a>
+            </li>
+            </li>
+            <li class="u-nav-item">
+              <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                href="http://localhost/test/reclamation/FrontOffice/view/add.php"
+                style="padding: 18px 70px">Réclamer</a>
+            </li>
+          </ul>
+        </div>
+        <div class="u-custom-menu u-nav-container-collapse">
+          <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+            <div class="u-inner-container-layout u-sidenav-overflow">
+              <div class="u-menu-close"></div>
+              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
+                <li class="u-nav-item">
+                  <a class="u-button-style u-nav-link" href="Contact.php">Se connecter</a>
+                </li>
+                <li class="u-nav-item">
+                  <a class="u-button-style u-nav-link" href="acceuil.html">Accueil</a>
+                </li>
+                <li class="u-nav-item">
+                  <a class="u-button-style u-nav-link" href="Sinscrire.php">s'inscrire</a>
+                </li>
+                <li class="u-nav-item">
+                  <a class="u-button-style u-nav-link"
+                    href="http://localhost/test/reclamation/FrontOffice/view/add.php">Réclamer</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+        </div>
+      </nav>
+      <img class="u-expanded-height u-image u-image-contain u-image-default u-image-1"
+        src="images/22463878_1144-Converti.png" alt="" data-image-width="344" data-image-height="316" />
+    </div>
+  </header>
+  <section class="u-clearfix u-image u-section-1" id="carousel_187f" data-image-width="1980" data-image-height="1320">
+    <div class="data-layout-selected u-clearfix u-layout-wrap u-layout-wrap-1">
+      <div class="u-layout">
+        <div class="u-layout-row">
+          <div
+            class="u-align-left u-container-style u-layout-cell u-left-cell u-size-26-lg u-size-28-xl u-size-29-md u-size-29-sm u-size-29-xs u-layout-cell-1">
+            <div class="u-container-layout u-container-layout-1">
+              <h5 class="u-custom-font u-text u-text-palette-5-dark-2 u-text-1">
+                <span style="font-size: 4.5rem">M</span>ovintEREST&nbsp;&nbsp;
+              </h5>
+              <p class="u-text u-text-palette-5-dark-2 u-text-2">
+                Réserver votre taxi ou trottinette électrique ​maintenant
+              </p>
+            </div>
+          </div>
+          <div
+            class="u-container-style u-image u-layout-cell u-right-cell u-shape-rectangle u-size-31-md u-size-31-sm u-size-31-xs u-size-32-xl u-size-34-lg u-image-1"
+            data-image-width="1200" data-image-height="1167">
+            <div class="u-container-layout u-container-layout-2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="u-clearfix u-white u-section-2" id="sec-ca9c">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <div class="custom-expanded u-list u-list-1">
+        <div class="u-repeater u-repeater-1">
+          <div class="u-align-center u-container-style u-list-item u-palette-3-base u-repeater-item u-list-item-1">
+            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1">
+              <img alt="" class="u-expanded-width u-image u-image-round u-image-1" data-image-width="800"
+                data-image-height="824" src="images/we.jpg" />
+              <h4 class="u-align-center-sm u-align-center-xs u-text u-text-1">
+                Taxi company
+              </h4>
+              <p class="u-text u-text-2">
+                Nous sommes votre choix de confiance pour des déplacements
+                rapides et sûrs en ville. Découvrez nos services de taxi pour
+                répondre à tous vos besoins de transport.
+              </p>
+              <a href=" http://localhost/test/taxifi/Front/taxis.php"
+                class="u-border-1 u-border-black u-border-hover-palette-2-base u-border-no-left u-border-no-right u-border-no-top u-btn u-btn-rectangle u-button-style u-none u-text-body-color u-text-hover-palette-2-base u-btn-1">Taxi
+              </a>
+            </div>
+          </div>
+          <div class="u-align-center u-container-style u-list-item u-palette-3-base u-repeater-item u-list-item-2">
+            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-2">
+              <img alt="" class="u-expanded-width u-image u-image-round u-image-2" data-image-width="700"
+                data-image-height="700" src="images/trottinette-electrique-kukudel-design-2021-jaune-MOJAVELO-1.jpg" />
+              <h4 class="u-align-center-sm u-align-center-xs u-text u-text-3">
+                Trottinette électrique
+              </h4>
+              <p class="u-text u-text-4">
+                Découvrez notre solution de mobilité électrique avec nous.
+                Parcourez la ville en toute simplicité avec nos trottinettes
+                électriques pratiques et respectueuses de l'environnement.
+              </p>
+              <a href="http://localhost/test/ab2/view/front%20office/Site/index.php"
+                class="u-border-1 u-border-black u-border-hover-palette-2-base u-border-no-left u-border-no-right u-border-no-top u-btn u-btn-rectangle u-button-style u-none u-text-body-color u-text-hover-palette-2-base u-btn-2">Trottinettes</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-deb9">
+    <div class="u-clearfix u-sheet u-sheet-1"></div>
+  </footer>
+  <section class="u-backlink u-clearfix u-grey-80">
+    <a class="u-link" href="html-templates" target="_blank">
+      <span>HTML Template</span>
+    </a>
+    <p class="u-text">
+      <span>created with</span>
+    </p>
+    <a class="u-link" href="" target="_blank">
+      <span>Offline Website Builder Software</span> </a>.
+  </section>
+</body>
+
+</html>
